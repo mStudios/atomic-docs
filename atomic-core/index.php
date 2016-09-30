@@ -218,7 +218,19 @@ $settings = $settings->select(array());
                      style="background-color:<?php echo $component['backgroundColor'] ?>">
 
 
-                    <?php require('../' . $setting['component_directory'] . '/' . $cat . '/' . $component['component'] . '.' . $setting['component_extension'] . ''); ?>
+                    <?php /* #mStudios modification for Mustache Output */ ?>
+                    <?php /* only include /component file if it exists, else render the /template file
+                    		 (with the idea to only create /component file for rendered mustache files)
+                    	  */ ?>
+                    <?php 
+                    	$componentfile = '../' . 'output' . '/' . $cat . '/' . $component['component'] . '.' . $setting['component_extension'] . '';
+                    	if (file_exists($componentfile)) {
+                    	    include($componentfile);
+                    	} else {
+                    		include('../' . $setting['component_directory'] . '/' . $cat . '/' . $component['component'] . '.' . $setting['component_extension'] . '');
+                    	}
+                    ?>
+                    <?php /* end #mStudios modification */ ?>
 
 
                 </div>
@@ -367,7 +379,15 @@ $settings = $settings->select(array());
 
 
             <div class="pageContent">
-
+				<h1>Read Me</h1>
+				<section>
+					<h2>Intro</h2>
+					<p>Lorem Ipsum ...</p>
+				</section>
+				<section>
+					<h2>Details</h2>
+					<p>Lorem Ipsum ...</p>
+				</section>
             </div>
 
         <?php } ?>

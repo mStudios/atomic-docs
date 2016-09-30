@@ -1,21 +1,5 @@
 [
     {
-        "component": "sidebar",
-        "category": "readme",
-        "description": "You can change the order components are displayed by dragging and dropping them in the sidebar. You can also move a component to a different category by dragging and dropping it into that categories file list. All changes will also be reflected in your project files as well as the order of the @import style strings order!",
-        "backgroundColor": "",
-        "order": 1,
-        "has_js": "false"
-    },
-    {
-        "component": "settings",
-        "category": "readme",
-        "description": "By default Atomic Docs is set up for Scss component style files and PHP markup files. This however can be easily changed even after you have started your project. Clicking on the gear icon in the blue toolbar in the sidebar gives you the ability to change the style partial file extension (to .less for example) as well as the ability to change the markup component file extension (to .twig perhaps).",
-        "backgroundColor": "",
-        "order": 0,
-        "has_js": "false"
-    },
-    {
         "component": "clickme",
         "category": "jsExample",
         "description": "You also have the option of adding a javascript file when you are creating and editing components. At the moment Atomic Docs expects the directory that your javascript files are located to be named \"js\". As is the case with the Scss files you will need to configure your build tool to compile the partial js files.",
@@ -24,11 +8,51 @@
         "has_js": "true"
     },
     {
-        "component": "box",
-        "category": "modules",
-        "description": "This is the box component!",
+        "component": "b_button",
+        "category": "examples",
+        "description": "Another mustache example. The template file contains the mustache variable tags and the component file loads and renders the template file and the values for the mustache variables are being set here too.",
         "backgroundColor": "",
-        "order": 4,
+        "order": 1,
+        "has_js": "false"
+    },
+    {
+        "component": "a_links",
+        "category": "examples",
+        "description": "Mustache example for a link tag. The template file (within \/templates\/modules) contains the html with the mustache variables. The output file (within \/components\/modules) renders the mustache template including the content of the variables.",
+        "backgroundColor": "",
+        "order": 0,
+        "has_js": "false"
+    },
+    {
+        "component": "c_item",
+        "category": "examples",
+        "description": "Building block to show a more complex component. This example includes the partial 'button'. The mustache tag variables in this example are still set within the components file.",
+        "backgroundColor": "",
+        "order": 2,
+        "has_js": "false"
+    },
+    {
+        "component": "d_item_ipsum",
+        "category": "examples",
+        "description": "This example uses the &quot;item&quot; module (iterating through the array 'LoremIpsum' in a JSON file and the mustache variables are added from that JSON file. If there are several items in the array, the mustache renderer would iterate through them all and output as many elements (i.e. item boxes) as there are in the JSON file.",
+        "backgroundColor": "",
+        "order": 3,
+        "has_js": "false"
+    },
+    {
+        "component": "e_layout",
+        "category": "examples",
+        "description": "This sets up an example page layout with blocks.",
+        "backgroundColor": "",
+        "order": 6,
+        "has_js": "false"
+    },
+    {
+        "component": "f_page",
+        "category": "examples",
+        "description": "Reading the 'd_layout' this adds custom content to a page.",
+        "backgroundColor": "",
+        "order": 7,
         "has_js": "false"
     }
 ]

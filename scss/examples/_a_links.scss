@@ -1,0 +1,10 @@
+/* scss/examples/_a_links.scss */
+a {
+    &:link, &:visited {
+        color: hotpink;
+        text-decoration: none;
+    }
+    &:active, &:focus, &:hover {
+        text-decoration: underline;
+    }
+}

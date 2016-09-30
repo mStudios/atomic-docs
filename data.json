@@ -1,0 +1,15 @@
+{
+  "addButton": [
+  	{
+  		"label":	"Add" 
+  	}
+  ],
+  "LoremIpsum": [
+  	{
+  		"id":		0,
+  		"name":		"Lorem ipsum dolor sit amet",
+  		"price":	"17.56",
+  		"addButton": [{ "label": "Click Me" }]
+   	}
+  ]
+}

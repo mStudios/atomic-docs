@@ -1,12 +1,15 @@
-/* scss/readme/_settings.scss */
-/* scss/readme/_sidebar.scss */
-/* scss/modules/_box.scss */
-.box {
-  background: #eee;
-  padding: 20px;
-  width: 300px;
-  height: 150px; }
+/* scss/examples/_a_links.scss */
+a:link, a:visited {
+  color: hotpink;
+  text-decoration: none; }
+a:active, a:focus, a:hover {
+  text-decoration: underline; }
 
+/* scss/examples/_b_button.scss */
+/* scss/examples/_c_item.scss */
+/* scss/examples/_d_item_ipsum.scss */
+/* scss/examples/_e_layout.scss */
+/* scss/examples/_f_page.scss */
 /* scss/jsExample/_clickme.scss */
 .click {
   cursor: pointer;
